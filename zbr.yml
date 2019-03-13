@@ -4,7 +4,7 @@ services:
     image: yangzb09/zbr:0.1
     container_name: ssr-socks
     ports:
-      - 31080:31080
+      - 38321:38321
     networks:
       - ssr-net
 
