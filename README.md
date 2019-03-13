@@ -25,7 +25,7 @@ Environment="NO_PROXY=localhost,127.0.0.1/32,10.0.0.0/8,172.16.0.0/16,192.168.1.
 #systemctl reload-daemon docker.service
 #systemctl restart docker.service
 ```
-[Issue aboute socks5 support](https://github.com/moby/moby/issues/16083)
+[Issue about socks5 proxy support](https://github.com/moby/moby/issues/16083)
 
 Setting github to use proxy
 ```bash
