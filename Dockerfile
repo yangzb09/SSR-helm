@@ -11,12 +11,12 @@ COPY entrypoint.sh entrypoint.sh
 
 COPY shadowsocksr /root/.local/share/shadowsocksr
 
+COPY polipo polipo
+
 RUN chmod +x ssr && \ 
     chmod +x entrypoint.sh 
-#   /bin/bash /root/ssr install
-#    mkdir /root/.local/share/shadowsocksr/ -p
 
 COPY config.json /root/.local/share/shadowsocksr/config.json
 
-EXPOSE 8321
+EXPOSE 31080
 ENTRYPOINT ["./entrypoint.sh"]

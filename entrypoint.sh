@@ -7,8 +7,10 @@ for i in `seq 1 $loop`
 do
 epoch=`date +%s`
 
-nohup /bin/bash /root/ssr start &> ./ssr.log
-tail -f ./ssr.log
+nohup /bin/bash /root/ssr start &
+
+./polipo/polipo -c polipo/config
+
 
 sleep 1
 
