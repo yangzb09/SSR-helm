@@ -1,7 +1,7 @@
 version: '3'
 services:
   ssr-node1:
-    image: yangzb09/zbr:0.1
+    image: yangzb09/zbr:0.2
     container_name: ssr-socks
     ports:
       - 38321:38321
