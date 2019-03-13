@@ -2,9 +2,9 @@
 
 # RUN docker directly:
 ```bash
-docker run -d -p 8321:38321 yangzb09/zbr:0.2 
+docker run -d -p 1080:38321 yangzb09/zbr:0.2 
 ```
-The service open 8321 socks5 port to proxy
+The service expose 1080 socks5 port for proxy
 
 # RUN SSR via docker-compose:
 ```bash
@@ -36,7 +36,7 @@ git config --global https.proxy 'socks5://192.168.26.1:1080'
 # Setting shell environment to use proxy
 ```shell
 vim ~/.bash_profile
-export https_proxy=http://192.168.26.1:1080
-export http_proxy=http://192.168.26.1:1080
+export https_proxy=socks5://192.168.26.1:1080
+export http_proxy=socks5://192.168.26.1:1080
 export NO_PROXY=192.168.0.0/16,localhost,127.0.0.1/32,master.hostname.example.com,10.0.0.0/8,172.16.0.0/16
 ```
