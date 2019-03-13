@@ -4,14 +4,15 @@
 ```bash
 docker run -d -p 1080:38321 yangzb09/zbr:0.2 
 ```
-The service expose 1080 socks5 port for proxy
+The service exposes 1080 socks5 port for proxy
 
 # RUN SSR via docker-compose:
 ```bash
 docker-compose -f zbr.yml pull
 docker-compose -f zbr.yml up
 ```
-# RUN SSR vis helm
+
+# RUN SSR via helm
 
 coming soon
 
