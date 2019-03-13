@@ -9,9 +9,6 @@ epoch=`date +%s`
 
 nohup /bin/bash /root/ssr start &
 
-./polipo/polipo -c polipo/config
-
-
 sleep 1
 
 done
