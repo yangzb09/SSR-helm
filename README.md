@@ -1,18 +1,21 @@
 ## SSR Proxy Usage
 
-#To run docker directly:
+# RUN docker directly:
 ```bash
 docker run -d -p 8321:38321 yangzb09/zbr:0.2 
 ```
 The service open 8321 socks5 port to proxy
 
-#To run SSR via docker-compose:
+# RUN SSR via docker-compose:
 ```bash
 docker-compose -f zbr.yml pull
 docker-compose -f zbr.yml up
 ```
+# RUN SSR vis helm
 
-Setting docker to use proxy:
+coming soon
+
+# Setting docker to use proxy:
 ```bash
 # vim /usr/lib/systemd/system/docker.service.d/proxy.conf 
 [Service]
@@ -30,7 +33,7 @@ git config --global http.proxy 'socks5://192.168.26.1:1080'
 git config --global https.proxy 'socks5://192.168.26.1:1080'
 ```
 
-Setting shell environment to use proxy
+# Setting shell environment to use proxy
 ```shell
 vim ~/.bash_profile
 export https_proxy=http://192.168.26.1:1080
